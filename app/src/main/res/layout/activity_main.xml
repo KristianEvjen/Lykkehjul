@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        tools:context=".MainActivity">
+
+        <CheckBox
+            android:id="@+id/flight_mode_checkbox"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flight_mode"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/select_timer_textview"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/select_timer"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/timer_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/left_column_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_timer_one_original"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/option_one_original" />
+
+                <LinearLayout
+                    android:id="@+id/timers1_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/option1_timer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option1_timer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option1_timer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option1_timer4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option1_timer5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option1_timer6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radio_timer_three_half"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_three_half" />
+
+
+                <LinearLayout
+                    android:id="@+id/timers3_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/option3_timer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option3_timer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option3_timer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option3_timer4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option3_timer5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option3_timer6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radio_test"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/test" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/right_column_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_timer_two_three_quarter"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_two_three_quarter" />
+
+                <LinearLayout
+                    android:id="@+id/timers2_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/option2_timer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option2_timer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option2_timer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option2_timer4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option2_timer5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option2_timer6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radio_timer_four_decreasing"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option_four_decreasing" />
+
+                <LinearLayout
+                    android:id="@+id/timers4_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/option4_timer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option4_timer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option4_timer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option4_timer4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option4_timer5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                    <TextView
+                        android:id="@+id/option4_timer6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0:00" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/select_countdown"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/select_countdown"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/countdown_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/chord_generator_question"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/chord_generator_question"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/yes_no_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_yes"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/radio_no"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/piano_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/radio_piano1"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="@string/piano_one" />
+
+            <RadioButton
+                android:id="@+id/radio_piano2"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="@string/piano_two" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/practice_checkbox"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/practice_only"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/next_button"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="@string/next" />
+
+    </LinearLayout>
+</ScrollView>

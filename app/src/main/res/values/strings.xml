@@ -1,0 +1,99 @@
+<resources>
+    <!--Main Activity xml-->
+    <string name="app_name">Lykkehjul</string>
+
+    <string name="flight_mode">Have you turned on flight mode?</string>
+
+    <string name="select_timer">Select the times for the six parts:</string>
+
+    <string name="test">Test</string>
+
+    <string name="option_one_original">Original</string>
+
+    <string name="option_two_three_quarter">&#190; time</string>
+
+    <string name="option_three_half">&#189; time</string>
+
+    <string name="option_four_decreasing">Decreasing</string>
+
+    <string name="select_countdown">Select a countdown time:</string>
+
+    <string-array name="countdown_times">
+        <item>0:05</item>
+        <item>0:10</item>
+        <item>0:15</item>
+        <item>0:20</item>
+        <item>0:25</item>
+        <item>0:30</item>
+    </string-array>
+
+    <string name="chord_generator_question">Do you want to use the chord generator (lykkehjulet) in the last part?</string>
+
+    <string name="yes">yes</string>
+
+    <string name="no">no</string>
+
+    <string name="piano_one">Piano 1</string>
+
+    <string name="piano_two">Piano 2</string>
+
+    <string name="practice_only">Practice only the last part (with countdown)</string>
+
+    <string name="next">next</string>
+
+
+    <!--Main Activity toasts-->
+    <string name="flight_mode_toast">Enable flight mode and check the box!</string>
+
+
+    <!--Summary Activity xml-->
+    <string name="summary">Summary</string>
+
+    <string name="countdown">Countdown</string>
+
+    <string name="tempo_part_one">Largo</string>
+
+    <string name="tempo_part_two">Adagio</string>
+
+    <string name="tempo_part_three">Andante</string>
+
+    <string name="tempo_part_four">Allegretto</string>
+
+    <string name="tempo_part_five">Allegro</string>
+
+    <string name="tempo_part_six">Presto</string>
+
+    <string name="dynamics_part_one">pppp</string>
+
+    <string name="dynamics_part_two">pp</string>
+
+    <string name="dynamics_part_three">mp</string>
+
+    <string name="dynamics_part_four">mf</string>
+
+    <string name="dynamics_part_five">ff</string>
+
+    <string name="dynamics_part_six">ffff</string>
+
+    <string name="colon">:</string>
+
+    <string name="chord_generator">Chord generator</string>
+
+    <string name="piano">Piano</string>
+
+    <string name="start">start</string>
+
+    <!--Chord Generator Activity xml-->
+    <string name="chord_image">chord image</string>
+
+
+    <!--Finished Activity xml-->
+
+    <string name="finished">Finished!</string>
+    <string name="image_of_part_of_the_score">image of part of the score</string>
+    <string name="exit">Exit</string>
+    <string name="exit_question_timer">Are you sure you want to exit the timer?</string>
+    <string name="exit_question_chord_generator">Are you sure you want to exit the chord generator?</string>
+
+
+</resources>
